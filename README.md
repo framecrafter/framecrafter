@@ -13,7 +13,7 @@ Fast, extensible, video editor in the browser.
 ## 🤔 Motivation
 Video is becoming the most important medium for sharing information online. Apps like TikTok and YouTube Shorts have *dramatically* democratized the production and publishing process. Tools like automagic background removal, facetracking, filters and effects come standard in these in-app editors.
 
-However, the production process in traditional, industry-standard NLEs like Final Cut, Premiere, and Resolve has not caught up. Keying out a greenscreen is still a highly manual, repetitive, three or four step process.
+However, the production process in traditional, industry-standard NLEs like Final Cut, Premiere, and Resolve has not caught up. For example, keying out a greenscreen is still a highly manual, repetitive, three or four step process.
 
 Framecrafter is on a mission to change that. We're building an industry leading video editor from the ground up that pushes the boundaries of what's possible with today's current technology.
 
