@@ -33,7 +33,7 @@ However, with the new [`WebCodecs` API](https://developer.mozilla.org/en-US/docs
 
 > The WebCodecs API gives web developers low-level access to the individual frames of a video stream and chunks of audio. It is useful for web applications that require full control over the way media is processed. For example, video or audio editors, and video conferencing.
 
-In a few experiments done by [Christopher Chadeau (vjeux)](https://github.com/vjeux/mp4-h264-re-encode), we've seen WebCodecs to provide similar encoding/export performance to Final Cut Pro...in the freaking browser!
+In a few experiments done by [Christopher Chadeau (vjeux)](https://github.com/vjeux/mp4-h264-re-encode) and [Vani (vanilagy)](https://github.com/Vanilagy/mp4-muxer), we've seen WebCodecs to provide similar encoding/export performance to Final Cut Pro...in the freaking browser!
 
 Levaraging this new technology, we believe we can build something that provides a great UX and performance that rivals truly native applications.
 
