@@ -7,7 +7,7 @@ Fast, extensible, video editor in the browser.
 ---
 
 > **Warning**
-> This project is _very_ early and most code here might be WIP, POC, or simply non-functional. For up-to-date information about the project status, please join us on Discord.
+> This project is _very_ early and most code here might be WIP, POC, or simply non-functional. For up-to-date information about the project status, please join us [on Discord](https://discord.gg/HtHcnA3tT9).
 
 ## 🤔 Motivation
 
@@ -21,7 +21,7 @@ Our goal is for Framecrafter to be a blazingly fast and highly extensible NLE wi
 
 Oh, and did I mention we plan to have Framecrafter run _entirely_ in the browser and be free to anyone with an internet connection?
 
-It's going to be a wild ride. So, **star the project** and **join us on Discord**. We're going to need all the help we can get 💪.
+It's going to be a wild ride. So, **star the project** and **join us [on Discord](https://discord.gg/HtHcnA3tT9)**. We're going to need all the help we can get 💪.
 
 ## 💻 Tech Background
 
@@ -57,7 +57,7 @@ Although that scope might seem small, these fundamental features will provide th
 
 ## 🙌 Contributing
 
-Thanks for your interest in contributing to this project! You can get more information on how to do so by joining us in the Discussions tab on GitHub or on Discord.
+Thanks for your interest in contributing to this project! You can get more information on how to do so by joining us in the Discussions tab on GitHub or [on Discord](https://discord.gg/HtHcnA3tT9).
 
 ## License
 
