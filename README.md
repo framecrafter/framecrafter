@@ -62,3 +62,15 @@ Thanks for your interest in contributing to this project! You can get more infor
 ## License
 
 This project is licensed under the MIT License.
+
+## 🙏 Prior Art / Parallel Projects
+
+- https://github.com/ffmpegwasm/ffmpeg.wasm
+- https://github.com/hughfenghen/WebAV
+- https://ffmpeg.org/
+- https://motionbox.io/
+- https://www.veed.io/
+- https://www.descript.com/
+- https://invideo.io/make/online-video-editor/
+- https://clipchamp.com/en/video-editor/
+- https://github.com/benfoxall/scrub
