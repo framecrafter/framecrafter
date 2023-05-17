@@ -67,6 +67,7 @@ This project is licensed under the MIT License.
 
 - https://github.com/ffmpegwasm/ffmpeg.wasm
 - https://github.com/hughfenghen/WebAV
+- https://github.com/mifi/lossless-cut
 - https://ffmpeg.org/
 - https://motionbox.io/
 - https://www.veed.io/
