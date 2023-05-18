@@ -1,6 +1,6 @@
 # Framecrafter Demo
 
-This is the POC web-app for Framecrafter's in-browser editor.
+This is the POC web-app for Framecrafter's in-browser editor. It's written using React, Vite, and Tailwind.
 
 ## Local Development
 
