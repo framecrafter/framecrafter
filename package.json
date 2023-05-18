@@ -1,0 +1,17 @@
+{
+  "name": "framecrafter",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "web": "pnpm --filter @framecrafter/web"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "latest",
+    "typescript": "^5.0.4"
+  }
+}
