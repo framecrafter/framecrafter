@@ -1,4 +1,4 @@
-![framecrafter-logo-banner](./assets//framecrafter-logo-text.png)
+![framecrafter-logo-banner](./logos/framecrafter-logo-text.png)
 
 <h2 align="center">
 Fast, extensible, video editor in the browser.
