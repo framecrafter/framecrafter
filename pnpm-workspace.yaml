@@ -1,4 +1,4 @@
 packages:
- - "web"
+ - "apps/*"
  - "packages/*"
  - "config/*"
