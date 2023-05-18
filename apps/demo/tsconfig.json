@@ -8,7 +8,8 @@
     "paths": {
       "components/*": ["src/components/*"]
     },
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals"],
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"]
 }

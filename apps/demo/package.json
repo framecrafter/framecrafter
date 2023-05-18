@@ -8,13 +8,16 @@
     "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
     "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "generate": "plop",
+    "g": "plop"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@dlytle/react-component-generator": "^1.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^2.1.0",
@@ -22,6 +25,7 @@
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
     "happy-dom": "^9.18.3",
+    "plop": "^3.1.2",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2",
     "tsconfig": "workspace:*",
