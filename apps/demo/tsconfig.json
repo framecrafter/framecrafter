@@ -3,13 +3,12 @@
   "extends": "tsconfig/vite.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "rootDir": "src",
     "outDir": "dist",
     "paths": {
       "components/*": ["src/components/*"]
     },
-    "types": ["vitest/globals"],
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src"]
+  "include": ["src", "test"]
 }
