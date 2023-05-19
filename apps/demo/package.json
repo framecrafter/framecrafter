@@ -13,6 +13,7 @@
     "g": "plop"
   },
   "dependencies": {
+    "mp4box": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -20,6 +21,7 @@
     "@dlytle/react-component-generator": "^1.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
+    "@types/dom-webcodecs": "^0.1.7",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@types/testing-library__jest-dom": "^5.14.5",
