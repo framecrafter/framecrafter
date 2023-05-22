@@ -1,9 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
 
-const sequenceBuffer = new Array(75)
-  .fill(1)
-  .map((_x, index) => `./horse-thumb-${index + 1}.png`);
+const sequenceBuffer = new Array(75).fill(1).map(async (_x, index) => {
+  const imageURI = `./horse-thumb-${index + 1}.png`;
+  const fetchedImage = await fetch(imageURI);
+  if (!fetchedImage.ok) {
+    throw Error("Couldn't fetch image");
+  }
+  const imageBlob = await fetchedImage.blob();
+  return new VideoFrame(await createImageBitmap(imageBlob), { timestamp: 0 });
+});
 
 function App() {
   const [frameIndex, setFrameIndex] = useState(0);
@@ -11,14 +17,22 @@ function App() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    if (!canvasRef.current) return;
-    const canvasWidth = canvasRef.current?.width;
-    const canvasHeight = canvasRef.current?.height;
-    const canvasContext = canvasRef.current?.getContext("2d");
-    const image = new Image();
-    image.src = sequenceBuffer[frameIndex];
-    image.onload = () =>
-      canvasContext?.drawImage(image, 0, 0, canvasWidth, canvasHeight);
+    async function paintFrame() {
+      if (!canvasRef.current) return;
+      const canvasWidth = canvasRef.current?.width;
+      const canvasHeight = canvasRef.current?.height;
+      const canvasContext = canvasRef.current?.getContext("2d");
+
+      canvasContext?.drawImage(
+        await sequenceBuffer[frameIndex],
+        0,
+        0,
+        canvasWidth,
+        canvasHeight
+      );
+    }
+
+    paintFrame();
   }, [frameIndex]);
 
   useEffect(() => {
