@@ -74,6 +74,7 @@ export class MP4Demuxer {
 
     // Fetch the file and pipe the data through.
     const fileSink = new MP4FileSink(this.#file, setStatus);
+
     fetch(uri).then((response) => {
       // highWaterMark should be large enough for smooth streaming, but lower is
       // better for memory usage.
