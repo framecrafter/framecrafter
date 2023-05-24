@@ -50,18 +50,15 @@ export class MP4Demuxer {
   #setStatus: (type: string, message: string) => void | undefined;
   #file: MP4File | undefined;
 
-  constructor(
-    uri: string,
-    {
-      onConfig,
-      onChunk,
-      setStatus,
-    }: {
-      onConfig: (config: VideoDecoderConfig) => void;
-      onChunk: (chunk: EncodedVideoChunk) => void;
-      setStatus: (type: string, message: string) => void;
-    }
-  ) {
+  constructor({
+    onConfig,
+    onChunk,
+    setStatus,
+  }: {
+    onConfig: (config: VideoDecoderConfig) => void;
+    onChunk: (chunk: EncodedVideoChunk) => void;
+    setStatus: (type: string, message: string) => void;
+  }) {
     this.#onConfig = onConfig;
     this.#onChunk = onChunk;
     this.#setStatus = setStatus;
@@ -71,18 +68,19 @@ export class MP4Demuxer {
     this.#file.onError = (error) => setStatus("demux", error);
     this.#file.onReady = this.#onReady.bind(this);
     this.#file.onSamples = this.#onSamples.bind(this);
+  }
 
+  async initialize(uri: string) {
+    if (!this.#file) return;
     // Fetch the file and pipe the data through.
-    const fileSink = new MP4FileSink(this.#file, setStatus);
-
-    fetch(uri).then((response) => {
-      // highWaterMark should be large enough for smooth streaming, but lower is
-      // better for memory usage.
-      if (response.body)
-        response.body.pipeTo(
-          new WritableStream(fileSink as unknown as any, { highWaterMark: 2 })
-        );
-    });
+    const fileSink = new MP4FileSink(this.#file, this.#setStatus);
+    const fileResponse = await fetch(uri);
+    console.log(fileResponse);
+    if (fileResponse.body) {
+      fileResponse.body.pipeTo(
+        new WritableStream(fileSink as unknown as any, { highWaterMark: 3 })
+      );
+    }
   }
 
   // Get the appropriate `description` for a specific track. Assumes that the
