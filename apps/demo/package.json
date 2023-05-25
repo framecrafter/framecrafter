@@ -8,7 +8,7 @@
     "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
     "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
     "test": "vitest",
-    "webtest": "web-test-runner test/**/*.test.ts --node-resolve",
+    "webtest": "web-test-runner --node-resolve",
     "coverage": "vitest run --coverage",
     "generate": "plop",
     "g": "plop"
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@dlytle/react-component-generator": "^1.0.0",
     "@esm-bundle/chai": "4.3.4-fix.0",
+    "@remcovaes/web-test-runner-vite-plugin": "^1.1.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/dom-webcodecs": "^0.1.7",
@@ -30,6 +31,7 @@
     "@vitejs/plugin-react": "^2.1.0",
     "@web/dev-server-esbuild": "^0.4.1",
     "@web/test-runner": "^0.16.1",
+    "@web/test-runner-playwright": "^0.10.0",
     "autoprefixer": "^10.4.14",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
