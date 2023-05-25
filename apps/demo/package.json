@@ -8,6 +8,7 @@
     "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
     "lint": "tsc --noEmit && eslint \"src/**/*.ts*\"",
     "test": "vitest",
+    "webtest": "web-test-runner test/**/*.test.ts --node-resolve",
     "coverage": "vitest run --coverage",
     "generate": "plop",
     "g": "plop"
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@dlytle/react-component-generator": "^1.0.0",
+    "@esm-bundle/chai": "4.3.4-fix.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/dom-webcodecs": "^0.1.7",
@@ -26,6 +28,7 @@
     "@types/react-dom": "^18.2.0",
     "@types/testing-library__jest-dom": "^5.14.5",
     "@vitejs/plugin-react": "^2.1.0",
+    "@web/dev-server-esbuild": "^0.4.1",
     "@web/test-runner": "^0.16.1",
     "autoprefixer": "^10.4.14",
     "eslint": "^7.32.0",
